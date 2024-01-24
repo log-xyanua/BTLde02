@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Đăng Kí Chụp Thử</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container__width {
+    width: 100% !important;
+    height: 100%;
+    margin: auto;
+}
+
+.page__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    font-family: 'Josefin',Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0 30px;
+}
+.page__body-slider .header-content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .page__body-slider .header-content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    width:320px;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+.page__header-logo {
+    width:70px;
+    height:70px;
+    padding: 10px;
+}
+.page__header-logo img{
+  background-size: 100%;
+  width:70px;
+  height:70px;
+}
+
+.page__header-nagvigation-content {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.page__header-nagvigation-content:hover{
+    color: rgb(0, 213, 255);
+    font-size: 25px;
+    padding: 0 10px;
+    text-decoration: underline;
+    text-align: right;
+}
+      .form {
+        padding: 40px;
+        width:350px;
+        margin:40px auto;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #85c9e0;
+      }
+      .form:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .req{
+        margin: 2px;
+        color: red;
+      }
+      .form div input{
+        padding: 10px;
+        border-radius: 2px;
+      }
+      .form div .hovaten{
+        margin: 10px;
+      }
+      .hovaten, .sdt, .email, .date{
+        margin-bottom: 20px;
+      }
+.footer {
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    margin-top: 20px;
+    height: 270px;
+    float:bottom;
+}
+.footer .container_footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 40px;
+    max-width: 1200px;
+}
+.footer .container_footer .contLeft{
+    width: 30%;
+    float: left;
+    
+}
+.footer .container_footer .contCenter{
+    width: 24%;
+    float: left;
+    margin-left: 20px;
+}
+.footer .container_footer .contRight{
+    width: 16%;
+    float: left;
+    margin-left: 20px;
+}
+.footer .container_footer .contRight li{
+    color: white;
+    list-style: none;
+    
+}
+.footer .container_footer .contPhai{
+    width: 24%;
+    float: right;
+    margin-left: 14px;
+}
+.footer .container_footer .contPhai a{
+    color: white;
+}
+.footer .container_footer .contPhai a:hover{
+    color: #0400ff;
+}.footer .container_footer .bottom{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-top: 190px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__width">
+            <div class="page__header">
+                <div class="page__header-navigation"><a class="page__header-logo" href="/BTL/index.html">
+                  <img src="itembody/logo.png" alt="logo">
+                </a>
+            </div>
+                <div class="page__header-navigation">
+                    <a href="index.html" class="page__header-nagvigation-content">Trang chủ</a>
+                    <a href="gioithieu.html" class="page__header-nagvigation-content">Giới Thiệu</a>
+                    <a href="trienlam.html" class="page__header-nagvigation-content">Triển Lãm</a>
+                    <a href="form.html" class="page__header-nagvigation-content">Đăng kí Chụp</a>
+                    <a href="lienhechungtoi.html" class="page__header-nagvigation-content">Liên Hệ</a>
+                </div>  
+            </div>
+       <div class="form">
+        <h2>Form đăng kí ngày chụp</h2>
+        <form action="https://www.w3schools.com/action_page.php" method="post" id="registrationForm">
+            <div class="hovaten" style="margin-bottom: 20px;">
+                <label for="hovaten">Họ Và Tên<span class="req">*</span></label><br>
+
+                <input type="text" id="hovaten" placeholder="Họ Và Tên.."  />
+            </div>
+
+            <div class="sdt">
+                <label for="sdt">Số Điện Thoại<span class="req">*</span></label><br>
+
+                <input type="text" id="sdt" placeholder="Sđt.."  />
+            </div>
+
+            <div class="email">
+                <label for="email">Địa Chỉ Email<span class="req">*</span></label><br>
+
+                <input type="email" id="email" placeholder="Email.."  /><br>
+                    
+            </div>
+            <div class="date">
+                <label for="date">Chọn Ngày Chụp <span class="req">*</span></label><br>
+
+                <input type="date" id="date" name="date" min="2020-01-01:">
+            </div>
+
+                <div><input type="submit" value="Gửi" style="cursor: pointer;padding: 10px; color:white; margin-right: 20px; background-color: rgb(59, 0, 161); border-radius: 5px; border: 1px solid rgb(160, 160, 160);"></div>
+        </form>
+    </div> 
+    <div class="footer">
+        <div class="container_footer">
+            <div class="contLeft">
+                <p style="margin-bottom: 28px;"><span style="font-weight: 700; color: #00c3ff; font-size: 19px; ">Thông Tin Liên Hệ</span></p>
+                <p style="margin-bottom: 13px;"><span style="font-weight: 600; color: white; font-size: 17px;">TTTPhotography</span></p>
+                <p style="margin-bottom: 13px;"><span style="color: white;">Địa Chỉ: Trịnh Văn Bô, Nam Từ Liêm, Hà Nội </span></p>
+                <p style="margin-bottom: 13px;"><span style="color: white;">Email:TTTphotography@g mail.com</span></p>
+                <p style="margin-bottom: 13px;"><span style="color: white;">HotLine: 0366666666</span></p>
+                
+            </div>
+            <div class="contCenter">
+                <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%91%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+%C4%90%C3%B4ng+%C3%81/@21.0400194,105.7389781,15.78z/data=!4m6!3m5!1s0x3135096b31fa7abb:0xff645782804911af!8m2!3d21.0400095!4d105.7419583!16s%2Fg%2F11b6dp60m1?entry=ttu" target="_blank"  style=" bottom: 0; left: 0.5em; width: 400px; font-weight: bold;"><img src="/pic/map.png" alt="" style="width:270px ;"></a>
+            </div>
+            <div class="contRight">
+                <p style="margin-bottom: 28px;"><span style="font-weight: 700; color: #00c3ff; font-size: 19px; ">Giờ Mở Cửa</span></p>
+                <li>Dịch Vụ: 7h30-19h00</li><br>
+                <li>Mở Tất Cả Các Ngày Trong Tuần</li><br>
+            </div>
+            <div class="bottom">
+                <p>Copyright © 2024 TTTPhotography.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div><!-- /form -->
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var hoTen = document.getElementById("hovaten").value;
+        var soDienThoai = document.getElementById("sdt").value;
+        var email = document.getElementById("email").value;
+        var chonngay = document.getElementById("date").value
+
+            if (hoTen === '') {
+                
+                alert("Vui lòng điền đầy đủ Họ Tên.");
+         
+            } 
+            else if (soDienThoai === '') {
+                alert("Vui lòng điền số đt.")
+                
+              
+            }
+           
+            else if(email === ''){
+                alert("Vui lòng điền email.")
+            }
+            else if(chonngay === ''){
+                alert("Vui lòng chọn ngày")
+            }
+            else {
+                
+                alert("Đăng kí thành công!");
+                
+            }
+            console.log("Họ và tên: " + hoTen);
+            console.log("Số điện thoại: " + soDienThoai);
+            console.log("Email: " + email);
+            console.log("Ngày Lái Thử: " + chonngay)
+        });
+    </script>
+</body>
+</html>

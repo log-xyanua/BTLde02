@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.container__width {
+    width: 100% !important;
+    height: 100%;
+    margin: auto;
+}
+
+.page__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0 30px;
+    font-family: 'Josefin',Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.page__body-slider .header-content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .page__body-slider .header-content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    width:320px;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+.page__header-logo {
+    width:70px;
+    height:70px;
+    padding: 10px;
+}
+.page__header-logo img{
+  background-size: 100%;
+  width:70px;
+  height:70px;
+}
+
+.page__header-nagvigation-content {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+    text-align: right;
+}
+.page__header-nagvigation-content:hover{
+    color: rgb(0, 213, 255);
+    font-size: 25px;
+    padding: 0 10px;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 550px;
+    width:100%;
+    max-width: 1200px;
+    padding-top: 20px;
+}
+
+
+.container .center{
+    width: 281px;
+    border: 1px solid #b3b3b3;
+    margin-left: 20px;
+    border-radius: 3px;
+    height: 440px;
+}
+.container div .cont{
+    line-height: 1.7;
+    padding-top: 10px;
+    font-size: 13px;
+    
+}
+.container .cont{
+    padding-left: 5px;
+    margin-top: 5px;
+}
+.container .cont .ctiet1{
+    margin-top: 33px;
+    margin-left: 10px;
+}
+.container .cont .ctiet{
+    margin-left: 10px;
+    margin-top: 33px;
+}
+.container div a{
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    font-size: 15px;
+}
+.container p{
+    font-weight: 600;
+}
+.container .bot{
+    
+    margin-bottom: 50px;
+    margin-left:150px;
+  
+}
+.container .bot .left{
+    
+    float: left;
+    width: 260px;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 490px;
+    margin-left: 10px;
+    
+}  
+.container .bot .right, .center1, .center2{
+    float: left;
+    width: 260px;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 490px;
+    margin-left: 32px;
+}
+.img{
+    background-color: #d5d5d5;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.img img{
+    width:  280px;
+    transform: scale(1);
+	transition: 0.3s;
+    border-radius: 5px;
+    opacity: 1;
+    filter: brightness(100%);
+    
+}
+.img img:hover{
+    transform: scale(1.03);
+    filter: brightness(80%);
+}
+
+
+.ctiet1 a:hover, .ctiet a:hover{
+    background-color: #c5c5c5;
+}
+.footer {
+    padding: 20px;   
+    background: rgb(0, 0, 0);
+    margin-top: 20px;
+    height: 250px;
+}
+.footer .container_footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    max-width: 1200px;
+}
+.footer .container_footer .contLeft{
+    width: 30%;
+    float: left;
+    
+}
+.footer .container_footer .contCenter{
+    width: 24%;
+    float: left;
+    margin-left: 20px;
+}
+.footer .container_footer .contRight{
+    width: 16%;
+    float: left;
+    margin-left: 20px;
+}
+.footer .container_footer .contRight li{
+    color: white;
+    list-style: none;
+    
+}
+.footer .container_footer .contPhai{
+    width: 24%;
+    float: right;
+    margin-left: 14px;
+}
+.footer .container_footer .contPhai a{
+    color: white;
+}
+.footer .container_footer .contPhai a:hover{
+    color: #0400ff;
+}
+.footer .container_footer .bottom{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-top: 200px;
+}
+</style>
+<body>
+   <div class="container-1">
+    <div class="page__header">
+        <div class="page__header-navigation"><a class="page__header-logo" href="index.html">
+          <img src="itembody/logo.png" alt="logo">
+        </a>
+      </div>
+        <div class="page__content-2-cricle">
+            <a href=" " class="cricle-1"></a>
+            <a href="https://www.facebook.com/logntsu" class="cricle-2"></a>
+            <a href="https://www.facebook.com/profile.php?id=100081005493047" class="cricle-3"></a>
+        </div>
+        <div class="page__header-navigation">
+            <a href="index.html" class="page__header-nagvigation-content">Trang chủ</a>
+            <a href="gioithieu.html" class="page__header-nagvigation-content">Giới Thiệu</a>
+            <a href="trienlam.html" class="page__header-nagvigation-content">Triển Lãm</a>
+            <a href="form.html" class="page__header-nagvigation-content">Đăng kí Chụp</a>
+            <a href="lienhechungtoi.html" class="page__header-nagvigation-content">Liên Hệ</a>
+            </div>
+    </div>
+    <div class="container">
+    
+        <div class="bot">
+            <div class="right">
+                <div class="img">
+                    <img src="Lien He/anhhai.jpg" alt="" style="height: 300px;">
+                </div>
+                <div class="cont">
+                    <p>Trần Ngọc Hải - Photographer<br> Sđt: 0366485058<br> Email: ngochai1906205@gmail.com</p>
+                    <div class="ctiet1">
+                        <a href="Lien He/ngochai.html" target="_blank">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center1">
+                <div class="img">
+                    <img src="Lien He/anhlong.jpg" alt="" style="height: 300px;">
+                </div>
+                <div class="cont">
+                    <p>Tạ Duy Long - Dựng bối cảnh<br> Sđt:0986252525 <br> Email:adgjmptw02804@gmail.com </p>
+                    <div class="ctiet">
+                        <a href="Lien He/taduylong1.html" target="_blank">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center2">
+                <div class="img">
+                    <img src="Lien He/anhchung.jpg" alt="" style="height: 300px;">
+                </div>
+                <div class="cont">
+                    <p>Nguyễn Đức Chung - Stylist<br> Sđt:0865405960  <br> Email:chung02122005@gmail.com </p>
+                    <div class="ctiet">
+                        <a href="Lien He/nguyenducchung.html" target="_blank">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <div class="footer">
+        <div class="container_footer">
+            <div class="contLeft">
+                <p style="margin-bottom: 28px;"><span style="font-weight: 700; color: #00c3ff; font-size: 19px; ">Thông Tin Liên Hệ</span></p>
+                <p style="margin-bottom: 13px;"><span style="font-weight: 600; color: white; font-size: 17px;">TTTPhotography</span></p>
+                <p style="margin-bottom: 13px;"><span style="color: white;">Địa Chỉ: Trịnh Văn Bô, Nam Từ Liêm, Hà Nội </span></p>
+                <p style="margin-bottom: 13px;"><span style="color: white;">Email:TTTphotography@g mail.com</span></p>
+                <p style="margin-bottom: 13px;"><span style="color: white;">HotLine: 0366666666</span></p>
+                
+            </div>
+            <div class="contCenter">
+                <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%91%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+%C4%90%C3%B4ng+%C3%81/@21.0400194,105.7389781,15.78z/data=!4m6!3m5!1s0x3135096b31fa7abb:0xff645782804911af!8m2!3d21.0400095!4d105.7419583!16s%2Fg%2F11b6dp60m1?entry=ttu" target="_blank"  style=" bottom: 0; left: 0.5em; width: 400px; font-weight: bold;"><img src="/pic/map.png" alt="" style="width:270px ;"></a>
+            </div>
+            <div class="contRight">
+                <p style="margin-bottom: 28px;"><span style="font-weight: 700; color: #00c3ff; font-size: 19px; ">Giờ Mở Cửa</span></p>
+                <li>Dịch Vụ: 7h30-19h00</li><br>
+                <li>Mở Tất Cả Các Ngày Trong Tuần</li><br>
+            </div>
+            <div class="bottom">
+                <p>Copyright © 2024 TTTPhotography.</p>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

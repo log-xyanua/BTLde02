@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container__width {
+    width: 100% !important;
+    height: 100%;
+    margin: auto;
+}
+
+.page__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    font-family: 'Josefin',Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0 30px;
+}
+.page__body-slider .header-content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .page__body-slider .header-content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    width:320px;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+.page__header-logo {
+    width:70px;
+    height:70px;
+    padding: 10px;
+}
+.page__header-logo img{
+  background-size: 100%;
+  width:70px;
+  height:70px;
+}
+
+.page__header-nagvigation-content {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+    text-align: right;
+}
+.page__header-nagvigation-content:hover{
+    color: rgb(0, 213, 255);
+    font-size: 25px;
+    text-decoration: underline;
+    padding: 0 10px;
+    text-align: right;
+}
+.page__body {
+    width: 1520px !important;
+    height: 100%;
+    margin:auto;
+}
+
+.page__body-slider {
+    width: 100%;
+    height: 600px;
+    background-color: #179eff;
+    background-image:url("https://ngochai1906.my.canva.site/images/337a13f132a3ff495bd3c29614c6986e.jpg");
+    background-size:100%;
+}
+.slider {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    display: flex;
+    
+}
+.container-1 {
+    display: flex;
+    background-color: #333;
+    height: 769px;
+  }
+  .left-content {
+    width: 50%;
+    height:250px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    color:white;
+  }
+  
+  .left-content h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top:200px;
+  }
+  .left-content p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-family: Arial;
+  }
+  .right-content {
+    width: 50%;
+  }
+  
+  .right-content img {
+    width: 680px;
+    height:680px;
+    object-fit: cover;
+    padding:0%;
+    padding-top:100px;
+    padding-left:100px;
+    padding-right:100px;
+  }
+  
+  .page__text-content {
+    color: white;
+    padding: 20px;
+  }
+
+  .page__text-content h1 {
+    font-size: 24px;
+  }
+
+  .container-2 {
+    width: 100%;
+    height:769px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-image: url("/BTL/itembody/dong1.jpeg");
+
+  } 
+    .container-2 h1 {
+    text-align: center;
+    font-size: 46px;
+    color: #333;
+    padding-top:50px;
+    text-shadow: 1px 3px 8px rgb(129, 129, 129);
+    }
+    .gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+    .photo {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+    .photo img {
+    width: 450px;
+    height: 500px;
+    transition: transform 0.5s;
+  }
+  
+    .photo:hover img {
+    transform: scale(1.1);
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .caption h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  .caption p {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .photo:hover .caption {
+    opacity: 1;
+} 
+
+.container-3 {
+  width: 100%;
+  height:1518px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 233, 194);
+  background-image: url("/BTL/itembody/bgmuahe5.webp");
+  background-size:100%;
+}
+.gallery-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-left: 40px;
+  
+}
+.container-3 h1{
+  text-align: center;
+  font-size: 46px;
+  color: #e6ff09;
+  padding-top:50px;
+  text-shadow: 1px 3px 8px rgb(0, 0, 0);
+}
+.container-3 .photo {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.container-3 .photo img {
+  width: 592px;
+  height: 483px;
+  transition: transform 0.5s;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+.container-3 .photo:hover img {
+  transform: scale(1.1);
+}
+.container-3 .photo1 {
+  width: 100%;
+  position: positive;
+  overflow: hidden;
+  align-items: center;
+  padding-top: 120px;
+  padding-left:90px;
+}
+
+.container-3 .photo1 img {
+  width: 1262px;
+  height: 580px;
+ }
+.caption-summer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 27px;
+  text-align: center;
+  width:1263px;
+}
+
+.top{
+  width: 100%;
+  height:769px
+}
+.top-right{
+  float:right;
+  max-width: 50%;
+}
+.top-left{
+  float:left;
+  max-width: 50%;
+}
+.bottom{
+  position: positive;
+  margin-top: 100px;
+}
+
+.container-4 {
+  width: 100%;
+  height:769px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: rgb(197, 49, 49);
+  background-image: url("/BTL/itembody/backgroundthu1.jpg");
+} 
+.container-4 h1 {
+  text-align: center;
+  font-size: 46px;
+  color: #fefefe;
+  padding-top:50px;
+  text-shadow: 1px 3px 6px rgb(200, 255, 1);
+  }
+  .caption1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(228, 99, 99);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .caption1 h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  .caption1 p {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .photo:hover .caption1 {
+    opacity: 1;
+}
+
+.container-5 {
+  width: 100%;
+  height:769px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #ffbdcd;
+  background-image: url("/BTL/itembody/bgmuaxuan2.jpg");
+
+} 
+.container-5 h1 {
+  text-align: center;
+  font-size: 46px;
+  color: #ffffff;
+  padding-top:50px;
+  text-shadow: 1px 3px 6px #ab4251;
+  }
+  .caption2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffc7d8;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .caption2 h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  .caption2 p {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  .photo2 {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+    .photo2 img {
+    width: 500px;
+    height: 450px;
+    transition: transform 0.5s;
+  }
+  
+    .photo2:hover img {
+    transform: scale(1.1);
+  }
+  .photo2:hover .caption2 {
+    opacity: 0.8;
+} 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #373434;
+    color: white;
+    margin: auto;
+  }
+  
+  .left {
+    width: 50%;
+    height:250px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .left h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  @keyframes disappear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* Apply the animation to the image and caption elements */
+  .disappear {
+    animation-name: disappear;
+    animation-duration: 3s;
+  }
+  .left .button {
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    padding-left: 50px;
+    padding-top: 17px;
+    font-size: 20px;
+    width:250px;
+    height:60px;
+  }
+  .left .button:hover {
+    font-weight: bolder;
+    background-color: #827c7c;
+  }
+  
+  .left .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left .social-icons a {
+    margin-right: 10px;
+    margin-bottom:30px;
+  }
+  
+  .left .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .left .contact-info {
+    font-size: 18px;
+  }
+  
+  .right {
+    width: 50%;
+  }
+  
+  .right img {
+    width:100%;
+    height: 760px;
+    object-fit: cover;
+    padding:0%;
+    margin:0%;
+  }
+  
